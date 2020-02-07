@@ -1,0 +1,8 @@
+.idea
+wp-admin
+wp-includes
+.htaccess
+#wp-config.php
+*.zip
+*.rar
+*.txt

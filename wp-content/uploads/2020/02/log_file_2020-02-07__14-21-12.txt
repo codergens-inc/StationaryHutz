@@ -1,0 +1,135 @@
+
+---Downloaded files---
+The import files for: Kartpul_Layout6 were successfully downloaded!
+Initial max execution time = 3000000
+Files info:
+Site URL = http://hasan:777/wp/stationaryhutz
+Data file = D:\xampp7\htdocs\wp\stationaryhutz/wp-content/themes/kartpul_layout6/demo-content/demo6/kartpul_layout6.wordpress.xml
+Widget file = D:\xampp7\htdocs\wp\stationaryhutz/wp-content/themes/kartpul_layout6/demo-content/demo6/kartpul_layout6_widgets_settings.wie
+Customizer file = D:\xampp7\htdocs\wp\stationaryhutz/wp-content/themes/kartpul_layout6/demo-content/demo6/kartpul_layout6_customizer_export.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+

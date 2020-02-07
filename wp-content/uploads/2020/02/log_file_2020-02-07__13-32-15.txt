@@ -1,0 +1,286 @@
+
+---Downloaded files---
+The import files for: Kartpul_Layout6 were successfully downloaded!
+Initial max execution time = 3000000
+Files info:
+Site URL = http://hasan:777/wp/stationaryhutz
+Data file = D:\xampp7\htdocs\wp\stationaryhutz/wp-content/themes/kartpul_layout6/demo-content/demo6/kartpul_layout6.wordpress.xml
+Widget file = D:\xampp7\htdocs\wp\stationaryhutz/wp-content/themes/kartpul_layout6/demo-content/demo6/kartpul_layout6_widgets_settings.wie
+Customizer file = D:\xampp7\htdocs\wp\stationaryhutz/wp-content/themes/kartpul_layout6/demo-content/demo6/kartpul_layout6_customizer_export.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Shop Sidebar : 
+
+Product Categories - Product categories - Imported
+Filter Products by Attribute - Filter by Color - Imported
+Products by Rating - Top rated products - Imported
+
+Main Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+Recent Posts - No Title - Imported
+
+Header Shopping Cart Widget Area : 
+
+Cart - Cart - Imported
+
+Header Search Widget Area : 
+
+Advance Search Widget - No Title - Imported
+
+Product Category Widget Area : 
+
+Product Categories - Product categories - Imported
+
+First Footer Widget Area : 
+
+Static Links - Get to Know Us - Imported
+
+Second Footer Widget Area : 
+
+Static Links - Connect With US - Imported
+
+Third Footer Widget Area : 
+
+Static Links - Earning with Us - Imported
+
+Fourth Footer Widget Area : 
+
+Static Links - Let Us Help You - Imported
+
+Fifth Footer Widget Area : 
+
+Gallery - Download Apps - Imported
+
+Footer Bottom Widget Area : 
+
+Image - No Title - Imported
+Newsletter - No Title - Imported
+Follow Us - No Title - Imported
+
+Footer Product Tag Area : 
+
+Product Tag Cloud - Product tags: - Imported
+
+Footer Payment Method Widget Area : 
+
+WooCommerce Accepted Payment Methods - Accepted Payment Methods - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+Slider processed
