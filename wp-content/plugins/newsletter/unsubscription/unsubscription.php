@@ -38,7 +38,7 @@ class NewsletterUnsubscription extends NewsletterModule {
                 wp_redirect($url);
                 die();
                 break;
-                
+
             case 'uc':
                 if ($this->antibot_form_check()) {
                     $user = $this->unsubscribe();
@@ -129,13 +129,14 @@ class NewsletterUnsubscription extends NewsletterModule {
 
     function hook_newsletter_replace($text, $user, $email) {
 
-        if (!$user) {
-            return $text;
+        if ($user) {
+            $text = $this->replace_url($text, 'UNSUBSCRIPTION_CONFIRM_URL', $this->build_action_url('uc', $user, $email));
+            $text = $this->replace_url($text, 'UNSUBSCRIPTION_URL', $this->build_action_url('u', $user, $email));
+            $text = $this->replace_url($text, 'REACTIVATE_URL', $this->build_action_url('reactivate', $user, $email));
+        } else {
+            $text = $this->replace_url($text, 'UNSUBSCRIPTION_CONFIRM_URL', '#');
+            $text = $this->replace_url($text, 'UNSUBSCRIPTION_URL', '#');
         }
-
-        $text = $this->replace_url($text, 'UNSUBSCRIPTION_CONFIRM_URL', $this->build_action_url('uc', $user, $email));
-        $text = $this->replace_url($text, 'UNSUBSCRIPTION_URL', $this->build_action_url('u', $user, $email));
-        $text = $this->replace_url($text, 'REACTIVATE_URL', $this->build_action_url('reactivate', $user, $email));
 
         return $text;
     }

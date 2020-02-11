@@ -2,7 +2,7 @@
 Tags: email, email marketing, newsletter, newsletter subscribers, welcome email, signup forms, contact, lead generation, popup, marketing automation
 Requires at least: 3.4.0
 Tested up to: 5.3.2
-Stable tag: 6.4.5
+Stable tag: 6.4.6
 Requires PHP: 5.6
 Contributors: satollo,webagile,michael-travan
 
@@ -109,9 +109,20 @@ Thank you, The Newsletter Team
 
 == Changelog ==
 
+= 6.4.6 =
+
+* Added hook to [register custom theme folders](https://www.thenewsletterplugin.com/developers/newsletter-themes)
+* Removed old themes
+* Removed packages theme folder scan (so locally added themes are not loaded, see site documentation if you need to create a custom theme)
+* Polylang support on default theme
+* Better error check on addon list retrieval
+* Added language on targeting options
+* Fixed user list pagination
+* Subject replacement for online preview
+
 = 6.4.5 =
 
-* Restored a missing methods used by addons
+* Restored a missing method used by addons
 * Added the changelog.txt file
 
 = 6.4.4 =

@@ -236,7 +236,6 @@ $controls->data['search_page'] ++;
 
                 <?php $controls->button('first', '«'); ?>
                 <?php $controls->button('prev', '‹'); ?>
-                <?php $controls->text('search_page', 3); ?> of <?php echo $last_page + 1 ?> <?php $controls->button('go', __('Go', 'newsletter')); ?>
                 <?php $controls->button('next', '›'); ?>
                 <?php $controls->button('last', '»'); ?>
             </div>

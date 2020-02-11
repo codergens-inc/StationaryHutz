@@ -1247,6 +1247,13 @@ table.widefat {
     font-family: "Circular Std", sans-serif;
 }
 
+#tnp-body #tabs {
+    background-color: transparent;
+    border: 0!important;
+    padding: 0;
+    margin: 0;
+}
+
 #tnp-body #tabs .ui-widget-header {
     background: #28313C;
     border: 0;
@@ -1262,23 +1269,27 @@ table.widefat {
     color: #444;
 }
 
+#tnp-body .ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+
 #tnp-body .ui-tabs .ui-tabs-nav li a {
     font-size: 14px;
 }
 
-#tnp-body .ui-tabs {
+#tnp-body #tabs .ui-tabs {
     border-color: #28313C;
     background-color: #28313C;
     border: 0;
 }
 
-#tnp-body .ui-tabs .ui-tabs-nav {
+#tnp-body #tabs .ui-tabs .ui-tabs-nav {
     margin: 0;
     padding: .2em .2em 0 0;
     background-color: #f2f2f2;
 }
 
-#tnp-body .ui-tabs .ui-tabs-panel {
+#tnp-body #tabs .ui-tabs .ui-tabs-panel {
     padding: 1em 0;
     background-color: #f2f2f2;
     margin: 0;
@@ -1291,8 +1302,9 @@ table.widefat {
     font-family: "Circular Std", sans-serif;
 }
 
+
 #tnp-body .ui-widget-content {
-    background: #fff !important;
+    background: #fff;
 }
 
 #tnp-body .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {

@@ -148,3 +148,11 @@ function tnp_media_resize($media_id, $size) {
 
     return $uploads['baseurl'] . '/newsletter/thumbnails/' . $relative_thumb;
 }
+
+function tnp_outlook_wrapper_open($width = 600) {
+    return NewsletterEmails::get_outlook_wrapper_open($width);
+}
+    
+function tnp_outlook_wrapper_close() {
+    return NewsletterEmails::get_outlook_wrapper_close();
+}

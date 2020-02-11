@@ -146,6 +146,10 @@ if ($controls->is_action('test') || $controls->is_action('save') || $controls->i
         $query .= " and wp_user_id<>0";
     }
     
+    if (!empty($email['options']['language'])) {
+        $query .= " and language='" . esc_sql((string) $email['options']['language']) . "'";
+    }
+    
     
     $list_where = array();
     if (isset($email['options']['lists']) && count($email['options']['lists'])) {
@@ -376,6 +380,14 @@ if ($email['status'] != 'sent') {
                                 <?php $controls->select2('options_lists_exclude', $lists, null, true, null, __('None', 'newsletter')); ?>
                             </td>
                         </tr>
+                        
+                        <tr>
+                            <th><?php _e('Language', 'newsletter') ?></th>
+                            <td>
+                                <?php $controls->language('options_language'); ?>
+                            </td>
+                        </tr>
+                        
                         <tr>
                             <th><?php _e('Gender', 'newsletter') ?></th>
                             <td>

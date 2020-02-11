@@ -12,6 +12,13 @@ defined('ABSPATH') || exit;
         </td>
     </tr>
     <tr>
+        <th><?php _e('External background color', 'newsletter') ?></th>
+        <td>
+            <?php $controls->color('theme_background'); ?>
+            <p class="description" style="display: inline">Hex values, e.g. #FF0000</p>
+        </td>
+    </tr>
+    <tr>
         <th><?php _e('Disable social links', 'newsletter') ?></th>
         <td><?php $controls->checkbox('theme_social_disable', ''); ?></td>
     </tr>
@@ -23,7 +30,7 @@ defined('ABSPATH') || exit;
     <tr>
         <th>Language</th>
         <td>
-            <?php $controls->language(); ?>
+            <?php $controls->language('theme_language'); ?>
         </td>
     </tr>
     <tr>

@@ -1,0 +1,152 @@
+/**
+* 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+@import url("../kartpul/responsive.css");
+
+@media only screen and (max-width: 1450px) {
+.header-right {
+	width: 85.5%;
+}
+}
+@media only screen and (max-width: 1200px) {
+.home .sidebar-category {
+    display: block;
+}
+.header-right {
+	width: 81.9%;
+}
+.right-block {
+	width: 71% !important;
+}
+.header-bottom .mobile-navigation{
+	display: none;
+}
+.header-style .header-bottom .mobile-navigation {
+	display: inline-block;
+	padding: 0;
+}
+.sticky-menu .header-bottom .navigation-bar {
+	display: none;
+}
+.sidebar-category {
+	height: 330px;
+}
+}
+@media only screen and (max-width: 979px) {
+.header-mob-logo {
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+}
+.header-logo {
+	display: none;
+}
+.home .sidebar-category {
+    display: none;
+}
+.header-search .woocommerce-product-search, .header-search .search-form {
+    width: 275px;
+    border: none;
+}
+.footer-top .title-outer::before, .footer-top .toggled-off .title-outer::before {
+	color: #000000;
+}
+.site-footer .title-outer::before, .site-footer .toggled-off .title-outer::before{
+	color: #000000;
+}
+.cms-banner-item .text2 {
+	font-size: 18px;
+}
+.cms-banner-item .text3 {
+	font-size: 13px;
+}
+.header-bottom-left {
+	float: left;
+	width: auto;
+}
+.header-search .header-toggle {
+	background-image: none;
+	cursor: pointer;
+	height: auto;
+	width: auto;
+	margin-top: 0;
+}
+.header-search .woocommerce-product-search, .header-search .search-form {
+	display: inline-block;
+	position: relative;
+	width: 310px;
+	top: auto;
+	z-index: 99;
+}
+.header-search .woocommerce-product-search .search-field, .header-search .search-form .search-field {
+	border-color: #0088cc;
+	width: 250px;
+	padding: 5px 20px;
+}
+.header-search .woocommerce-product-search input[type="submit"], .header-search .woocommerce-product-search button[type="submit"], .header-search .search-form #searchsubmit {
+	background-image: url("images/megnor/search.svg");
+	height: 50px;
+	width: 50px;
+	background-color: #08c;
+}
+.header-search {
+	float: right;
+}
+.right-block {
+	width: 100% !important;
+}
+.header-search .woocommerce-product-search .search-field, .header-search .search-form .search-field {
+	width: 222px;
+}
+.header-search .woocommerce-product-search, .header-search .search-form {
+	width: 280px;
+}
+}
+@media only screen and (max-width: 767px) {
+.header-right {
+	width: 80%;
+}
+.menu-toggle{
+	padding: 0;
+	font-size: 0;
+}
+.sticky .menu-toggle {
+	padding: 6px 0 0;
+}
+.header-search .header-toggle {
+	background-image: url("images/megnor/search.svg");
+	height: 50px;
+	width: 50px;
+	background-color: #08c;
+	background-position: center;
+	border-radius: 5px;
+	background-size: 22px;
+}
+.header-search.active .header-toggle {
+	background-image: url("images/megnor/close-black.svg");
+}
+.header-search .woocommerce-product-search, .header-search .search-form {
+	display: none;
+}
+.header-search .woocommerce-product-search, .header-search .search-form {
+	position: absolute;
+	top: 60px;
+}
+}
+@media only screen and (max-width: 479px) {
+.box-category, .sticky-menu .box-category, .home .sticky-menu .box-category, .home .box-category {
+	height: 50px;
+}
+.header-right {
+	width: 65%;
+}
+}
+@media only screen and (max-width: 379px) {
+	.cms-banner-item .text2 {
+		font-size: 14px;
+	}
+	.cms-banner-item .text3 {
+		font-size: 11px;
+	}
+}

@@ -2,6 +2,12 @@
 
 defined('ABSPATH') || exit;
 
+class TNP_Media {
+    var $url;
+    var $width;
+    var $height;
+}
+
 class TNP_Composer {
 
     static $block_dirs = array();
@@ -1127,7 +1133,7 @@ class NewsletterModule {
         }
 
         $email = $this->get_email($id);
-        
+
         // TODO: Check the token? It's really useful?
 
         return $email;
@@ -1339,7 +1345,7 @@ class NewsletterModule {
         }
         return $r;
     }
-    
+
     /**
      * Accepts a user ID or a TNP_User object. Does not check if the user really exists.
      * 
@@ -1978,6 +1984,7 @@ class NewsletterModule {
             }
 
 
+            // Deprecated
             $text = str_replace('{surname}', $user->surname, $text);
             $text = str_replace('{last_name}', $user->surname, $text);
 
@@ -2005,20 +2012,8 @@ class NewsletterModule {
             $base = (empty($this->options_main['url']) ? get_option('home') : $this->options_main['url']);
             $id_token = '&amp;ni=' . $user->id . '&amp;nt=' . $user->token;
 
-
-            $nek = false;
-            if ($email) {
-                $nek = $this->get_email_key($email);
-                $text = str_replace('{email_id}', $email->id, $text);
-                $text = str_replace('{email_key}', $nek, $text);
-                $text = str_replace('{email_subject}', $email->subject, $text);
-                // Deprecated
-                $text = str_replace('{subject}', $email->subject, $text);
-                $text = $this->replace_url($text, 'EMAIL_URL', $this->build_action_url('v', $user) . '&id=' . $email->id);
-            }
-
             $text = $this->replace_url($text, 'SUBSCRIPTION_CONFIRM_URL', $this->build_action_url('c', $user));
-            $text = $this->replace_url($text, 'ACTIVATION_URL', $this->build_action_url('v', $user));
+            $text = $this->replace_url($text, 'ACTIVATION_URL', $this->build_action_url('c', $user));
 
 // Obsolete.
             $text = $this->replace_url($text, 'FOLLOWUP_SUBSCRIPTION_URL', self::add_qs($base, 'nm=fs' . $id_token));
@@ -2028,8 +2023,18 @@ class NewsletterModule {
         } else {
             $text = $this->replace_url($text, 'SUBSCRIPTION_CONFIRM_URL', '#');
             $text = $this->replace_url($text, 'ACTIVATION_URL', '#');
-            $text = $this->replace_url($text, 'UNSUBSCRIPTION_CONFIRM_URL', '#');
-            $text = $this->replace_url($text, 'UNSUBSCRIPTION_URL', '#');
+        }
+
+        if ($email) {
+            $nek = $this->get_email_key($email);
+            $text = str_replace('{email_id}', $email->id, $text);
+            $text = str_replace('{email_key}', $nek, $text);
+            $text = str_replace('{email_subject}', $email->subject, $text);
+            // Deprecated
+            $text = str_replace('{subject}', $email->subject, $text);
+            $text = $this->replace_url($text, 'EMAIL_URL', $this->build_action_url('v', $user) . '&id=' . $email->id);
+        } else {
+            $text = $this->replace_url($text, 'EMAIL_URL', '#');
         }
 
         if (strpos($text, '{subscription_form}') !== false) {
@@ -2294,7 +2299,7 @@ class NewsletterModule {
             }
             return $current_language;
         }
-        
+
         // Polylang
         if (function_exists('pll_current_language')) {
             return pll_current_language();

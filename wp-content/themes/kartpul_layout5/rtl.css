@@ -1,0 +1,54 @@
+/*
+Theme Name: Kartpul Layout5
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+@import url("../kartpul/rtl.css");
+.header-top-center {
+	padding-right: 70px;
+	padding-left: 0;
+}
+.header-top-left {
+	margin-right: 0;
+}
+.right-block {
+	float: left !important;
+}
+.left-block{
+	float: right !important;
+}
+.header-search {
+	float: right;
+	padding-left: 0;
+	padding-right: 30px;
+}
+.sidebar-category-inner .cat-parent .children.toggle-block.sub, .sidebar-category-inner li .sub-menu.sub {
+	border-right-color: transparent;
+	border-left-color: #e2e2e2;
+}
+.sidebar-category-inner .sub-container.mega, .sidebar-category-inner .sub-container.non-mega {
+	right: 220px !important;
+	left: auto !important;
+}
+.more-wrap {
+	padding: 7px 14px 7px 0;
+}
+@media only screen and (max-width: 979px) {
+.header-top-center {
+	padding-right: 0 !important;
+	padding-left: 0;
+}
+.header-bottom-left {
+	float: right !important;
+}
+}
+@media only screen and (max-width: 767px) {
+.header-search {
+	float: left !important;
+}
+.menu-toggle {
+	padding: 0 !important;
+}
+}

@@ -4,14 +4,14 @@
   Plugin Name: Newsletter
   Plugin URI: https://www.thenewsletterplugin.com/plugins/newsletter
   Description: Newsletter is a cool plugin to create your own subscriber list, to send newsletters, to build your business. <strong>Before update give a look to <a href="https://www.thenewsletterplugin.com/category/release">this page</a> to know what's changed.</strong>
-  Version: 6.4.5
+  Version: 6.4.6
   Author: Stefano Lissa & The Newsletter Team
   Author URI: https://www.thenewsletterplugin.com
   Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
   Text Domain: newsletter
   License: GPLv2 or later
 
-  Copyright 2009-2019 The Newsletter Team (email: info@thenewsletterplugin.com, web: https://www.thenewsletterplugin.com)
+  Copyright 2009-2020 The Newsletter Team (email: info@thenewsletterplugin.com, web: https://www.thenewsletterplugin.com)
 
   Newsletter is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@
 
  */
 
-define('NEWSLETTER_VERSION', '6.4.5');
+define('NEWSLETTER_VERSION', '6.4.6');
 
 global $newsletter, $wpdb;
 
@@ -196,8 +196,10 @@ class Newsletter extends NewsletterModule {
                     static $slugs = array();
                     if (empty($slugs)) {
                         $addons = $this->getTnpExtensions();
-                        foreach ($addons as $addon) {
-                            $slugs[] = $addon->wp_slug;
+                        if ($addons) {
+                            foreach ($addons as $addon) {
+                                $slugs[] = $addon->wp_slug;
+                            }
                         }
                     }
                     if (array_search($plugin_file, $slugs) !== false) {
@@ -1155,6 +1157,10 @@ class Newsletter extends NewsletterModule {
         if (empty($extensions_json)) {
             $url = "http://www.thenewsletterplugin.com/wp-content/extensions.json?ver=" . NEWSLETTER_VERSION;
             $extensions_response = wp_remote_get($url);
+            if (is_wp_error($extensions_response)) {
+                $this->logger->error($extensions_response);
+                return false;
+            }
             $extensions_json = wp_remote_retrieve_body($extensions_response);
             if (!empty($extensions_json)) {
                 set_transient('tnp_extensions_json', $extensions_json, 72 * 60 * 60);
